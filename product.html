@@ -23,6 +23,7 @@
         stroke-width="1.5"
         stroke="currentColor"
         class="w-6 h-6 md:hidden"
+        id="open-nav"
       >
         <path
           stroke-linecap="round"
@@ -45,7 +46,30 @@
         </li>
       </ul>
     </nav>
-
+ <!-- slide Navbar -->
+ <section
+ id="sidenav"
+ class="bg-green-100 fixed z-20 top-0 right-0 transition-all duration-1000"
+ style="width: 50%; height: 100vh;right: -50%;" >
+ <div class="text-right p-5">
+   <p id="navbar-close" class="inline cursor-pointer">X</p>
+ </div>
+ <ul class="flex flex-col   gap-10 items-center text-gray-600">
+   <li>
+     <a class="hover:underline hover:text-black" href="index.html">Home</a>
+   </li>
+   <li>
+     <a class="hover:underline hover:text-black" href="product.html"
+       >Products</a
+     >
+   </li>
+   <li>
+     <a class="hover:underline hover:text-black" href="contact.html"
+       >Contact</a
+     >
+   </li>
+ </ul>
+</section>
     <!-- Product -->
     <section class="mt-10 p-4 flex flex-col gap-5 items-center">
       <h1 class="font-bold text-3xl text-center">Our Products</h1>
@@ -54,16 +78,17 @@
         placeholder="Search for a product"
         class="p-3 border border-black rounded"
         style="width: 80%"
+        id="search-bar"
       />
 
-      <div class="grid grid-cols-4 gap-7 mt-5 text-center">
+      <div id="container" class="grid grid-cols-4 gap-7 mt-5 text-center">
         <div>
           <img
             src="./images/plant2.png"
             class="hover:shadow-2xl transform hover:-translate-y-2"
             alt=""
           />
-          <p class="mt-3">Plant</p>
+          <h1 class="mt-3">Lily Plant</h1>
           <p>$20</p>
         </div>
         <div>
@@ -72,7 +97,7 @@
             class="hover:shadow-2xl transform hover:-translate-y-2"
             alt=""
           />
-          <p class="mt-3">Plant</p>
+          <h1 class="mt-3">Green Plant</h1>
           <p>$20</p>
         </div>
         <div>
@@ -81,7 +106,7 @@
             class="hover:shadow-2xl transform hover:-translate-y-2"
             alt=""
           />
-          <p class="mt-3">Plant</p>
+          <h1 class="mt-3">White Plant</h1>
           <p>$20</p>
         </div>
         <div>
@@ -90,7 +115,7 @@
             class="hover:shadow-2xl transform hover:-translate-y-2"
             alt=""
           />
-          <p class="mt-3">Plant</p>
+          <h1 class="mt-3">Green Plant</h1>
           <p>$20</p>
         </div>
         <div>
@@ -99,7 +124,7 @@
             class="hover:shadow-2xl transform hover:-translate-y-2"
             alt=""
           />
-          <p class="mt-3">Plant</p>
+          <h1 class="mt-3">Lily Plant</h1>
           <p>$20</p>
         </div>
         <div>
@@ -108,7 +133,7 @@
             class="hover:shadow-2xl transform hover:-translate-y-2"
             alt=""
           />
-          <p class="mt-3">Plant</p>
+          <h1 class="mt-3">Green Plant</h1>
           <p>$20</p>
         </div>
         <div>
@@ -117,7 +142,7 @@
             class="hover:shadow-2xl transform hover:-translate-y-2"
             alt=""
           />
-          <p class="mt-3">Plant</p>
+          <h1 class="mt-3">White Plant</h1>
           <p>$20</p>
         </div>
         <div>
@@ -126,7 +151,7 @@
             class="hover:shadow-2xl transform hover:-translate-y-2"
             alt=""
           />
-          <p class="mt-3">Plant</p>
+          <h1 class="mt-3">Green Plant</h1>
           <p>$20</p>
         </div>
       </div>
@@ -141,6 +166,6 @@
       </p>
       <p>@2021 Greenday.com</p>
     </section>
-
+    <script src="product.js"></script>
   </body>
 </html>

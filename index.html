@@ -14,7 +14,7 @@
   <body>
     <!--Navbar-->
     <nav
-      class="bg-green-100 p-5 flex items-center justify-between shadow-xl z-10 sticky top-0 "
+      class="bg-green-100 p-5 flex items-center justify-between shadow-xl z-10 sticky top-0"
     >
       <h1 class="text-2xl">GreenDen</h1>
       <svg
@@ -24,6 +24,7 @@
         stroke-width="1.5"
         stroke="currentColor"
         class="w-6 h-6 md:hidden"
+        id="open-nav"
       >
         <path
           stroke-linecap="round"
@@ -33,15 +34,45 @@
       </svg>
 
       <ul class="flex gap-5 text-gray-600 hidden md:flex">
-        <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
         <li>
-          <a class="hover:underline hover:text-black" href="product.html">Products</a>
+          <a class="hover:underline hover:text-black" href="index.html">Home</a>
         </li>
         <li>
-          <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+          <a class="hover:underline hover:text-black" href="product.html"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="contact.html"
+            >Contact</a
+          >
         </li>
       </ul>
     </nav>
+    <!-- slide Navbar -->
+    <section
+      id="sidenav"
+      class="bg-green-100 fixed z-20 top-0 right-0 transition-all duration-1000"
+      style="width: 50%; height: 100vh;right: -50%;" >
+      <div class="text-right p-5">
+        <p id="navbar-close" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex flex-col   gap-10 items-center text-gray-600">
+        <li>
+          <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="product.html"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="contact.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </section>
 
     <!-- Header Section -->
 
@@ -50,7 +81,9 @@
         <p class="mb-5">
           We offer You a wide Range of Artifical and Natural Flowers
         </p>
-        <h1 class="mb-5 font-bold text-3xl md:text-5xl">Plants for your Interior</h1>
+        <h1 class="mb-5 font-bold text-3xl md:text-5xl">
+          Plants for your Interior
+        </h1>
         <div class="mb-5">
           <button class="bg-black text-white rounded p-2">Shop Now</button>
           <button class="border-black rounded border p-2">Watch Video</button>
@@ -193,7 +226,7 @@
     <section class="p-5 mt-5 text-center">
       <h1 class="text-3xl font-bold">Customer Review</h1>
       <div class="flex flex-col justify-center mt-5 gap-5">
-        <div class="bg-green-900 p-5 ">
+        <div class="bg-green-900 p-5">
           <p class="text-white">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
             perferendis, vero magni error tempore adipisci maiores placeat amet
@@ -202,7 +235,7 @@
           </p>
           <h3 class="text-yellow-200 mt-3">Green Mathew</h3>
         </div>
-        <div class="bg-green-900 p-5 ">
+        <div class="bg-green-900 p-5">
           <p class="text-white">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
             perferendis, vero magni error tempore adipisci maiores placeat amet
@@ -211,7 +244,7 @@
           </p>
           <h3 class="text-yellow-200 mt-3">Jim</h3>
         </div>
-        <div class="bg-green-900 p-5 ">
+        <div class="bg-green-900 p-5">
           <p class="text-white">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
             perferendis, vero magni error tempore adipisci maiores placeat amet
@@ -226,20 +259,27 @@
     <!-- News Letter -->
     <section class="text-center mt-3 p-3">
       <h1 class="text-3xl font-bold m-3">Join our News Letter</h1>
-      <p>Signup for email newspaper to get exclusive discounts, updates, and more</p>
-      <input type="text" class="border border-black m-3 p-3 " style="width: 80%">
-      <br>
+      <p>
+        Signup for email newspaper to get exclusive discounts, updates, and more
+      </p>
+      <input
+        type="text"
+        class="border border-black m-3 p-3"
+        style="width: 80%"
+      />
+      <br />
       <button class="bg-black text-white p-3 m-1 rounded">Subscribe</button>
     </section>
 
     <!-- Footer -->
-    <section class="bg-green-100 p-10 flex flex-col gap-5 ">
-      <h1 class="text-4xl font-bold">GreenDen</h1> 
-      <p> The Standard chunk of Lorem ipsum used since the 1500s is reported below for those interest</p>
+    <section class="bg-green-100 p-10 flex flex-col gap-5">
+      <h1 class="text-4xl font-bold">GreenDen</h1>
+      <p>
+        The Standard chunk of Lorem ipsum used since the 1500s is reported below
+        for those interest
+      </p>
       <p>@2021 Greenday.com</p>
-
     </section>
-
-
+    <script src="index.js"></script>
   </body>
 </html>
